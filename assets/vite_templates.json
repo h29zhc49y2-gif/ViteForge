@@ -1,0 +1,151 @@
+{
+  "name": "ViteForge Config Templates",
+  "templates": {
+    "react-ts-spa": {
+      "framework": "react",
+      "typescript": true,
+      "plugins": [
+        "react"
+      ],
+      "alias": {
+        "@": "./src"
+      },
+      "description": "React + TypeScript SPA"
+    },
+    "react-ts-with-proxy": {
+      "extends": "react-ts-spa",
+      "proxy": {
+        "/api": "http://localhost:8080"
+      },
+      "description": "React SPA with backend proxy"
+    },
+    "vue-ts-spa": {
+      "framework": "vue",
+      "typescript": true,
+      "plugins": [
+        "vue"
+      ],
+      "alias": {
+        "@": "./src"
+      },
+      "description": "Vue 3 + TypeScript SPA"
+    },
+    "vue-auto-import": {
+      "framework": "vue",
+      "typescript": true,
+      "plugins": [
+        "vue",
+        "auto-import",
+        "components"
+      ],
+      "alias": {
+        "@": "./src"
+      },
+      "description": "Vue 3 + unplugin auto-import"
+    },
+    "react-library": {
+      "framework": "react",
+      "typescript": true,
+      "plugins": [
+        "react"
+      ],
+      "alias": {
+        "@": "./src"
+      },
+      "lib_mode": {
+        "entry": "src/index.ts",
+        "formats": [
+          "es",
+          "umd"
+        ]
+      },
+      "description": "React component library"
+    },
+    "vue-library": {
+      "framework": "vue",
+      "typescript": true,
+      "plugins": [
+        "vue"
+      ],
+      "alias": {
+        "@": "./src"
+      },
+      "lib_mode": {
+        "entry": "src/index.ts",
+        "formats": [
+          "es",
+          "umd"
+        ]
+      },
+      "description": "Vue 3 component library"
+    },
+    "electron-react": {
+      "framework": "react",
+      "typescript": true,
+      "plugins": [
+        "react",
+        "electron"
+      ],
+      "alias": {
+        "@": "./src"
+      },
+      "description": "Electron + React desktop app"
+    },
+    "vanilla-lite": {
+      "framework": "vanilla",
+      "typescript": false,
+      "plugins": [],
+      "description": "Minimal vanilla config"
+    }
+  },
+  "plugin_catalog": {
+    "react": {
+      "name": "@vitejs/plugin-react",
+      "devDep": true
+    },
+    "vue": {
+      "name": "@vitejs/plugin-vue",
+      "devDep": true
+    },
+    "svelte": {
+      "name": "@sveltejs/vite-plugin-svelte",
+      "devDep": true
+    },
+    "visualizer": {
+      "name": "rollup-plugin-visualizer",
+      "devDep": true
+    },
+    "compression": {
+      "name": "vite-plugin-compression",
+      "devDep": true
+    },
+    "svgr": {
+      "name": "vite-plugin-svgr",
+      "devDep": true
+    },
+    "eslint": {
+      "name": "vite-plugin-eslint",
+      "devDep": true
+    },
+    "md": {
+      "name": "vite-plugin-md",
+      "devDep": true
+    },
+    "pwa": {
+      "name": "vite-plugin-pwa",
+      "devDep": true
+    },
+    "electron": {
+      "name": "vite-plugin-electron",
+      "devDep": true
+    },
+    "auto-import": {
+      "name": "unplugin-auto-import",
+      "devDep": true
+    },
+    "components": {
+      "name": "unplugin-vue-components",
+      "devDep": true
+    }
+  }
+}
