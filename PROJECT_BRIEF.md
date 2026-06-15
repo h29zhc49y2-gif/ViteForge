@@ -1,32 +1,52 @@
-# ViteForge 椤圭洰绠€鎶?
-## 椤圭洰姒傝
-- **椤圭洰鍚?*锛歏iteForge
-- **瀹氫綅**锛歏ite 閰嶇疆鑷姩鐢熸垚 Trae Skill锛屼竴鍙ラ渶姹傗啋瀹屾暣 vite.config.ts
-- **涓€鍙ヨ瘽**锛氬憡璇夊畠"React + TS + 浠ｇ悊/api鍒板悗绔?+ 鍒悕@"锛?0绉掔敓鎴愬彲鐩存帴鐢ㄧ殑瀹屾暣 Vite 閰嶇疆
-- **宸ヤ綔鍖鸿矾寰?*锛欳:\AI_Projects\ViteForge
-- **鐩爣鐢ㄦ埛**锛氱敤 Trae 鍋氬墠绔紑鍙戠殑寮€鍙戣€咃紙React/Vue/Svelte/Library锛?
-## 鏍稿績鍔熻兘
-1. 鑷姩妫€娴嬮」鐩妧鏈爤锛堟鏋?璇█/鍖呯鐞嗗櫒锛?2. 鎸夐渶鐢熸垚瀹屾暣 vite.config.ts锛坧lugins/alias/proxy/env/build锛?3. 渚濊禆鑷姩瀹夎鎻愮ず锛堢己鍝釜鎻掍欢瑁呭摢涓級
-4. Webpack 鈫?Vite 杩佺Щ杈呭姪
-5. 澶氱幆澧冮厤缃紙dev/preview/prod锛?6. 甯歌鍦烘櫙妯℃澘搴擄紙SPA/MPA/缁勪欢搴?Electron锛?
-## 宸紓鍖?- 涓嶆槸"缁欎竴涓€氱敤妯℃澘"锛岃€屾槸鏍规嵁椤圭洰瀹為檯鏂囦欢缁撴瀯鐢熸垚
-- 鍐呯疆 30+ 鎻掍欢閰嶇疆妯℃澘锛岀煡閬?peerDependencies
-- 浠ｇ悊銆佸埆鍚嶃€佺幆澧冨彉閲忓叏鑷姩鎺ㄦ柇
-- 鐢熸垚鐨勯厤缃湁涓枃娉ㄩ噴瑙ｉ噴姣忚鐨勪綔鐢?
-## 瀹氫环
-- 鍏嶈垂鐗堬細React/Vue 鍩虹妯℃澘 + 鎻掍欢鍒楄〃
-- Pro 鐗堬細29.9鍏冿紝澶氭鏋?+ 楂樼骇鍦烘櫙(搴撴ā寮?SSR/Electron) + 澧為噺淇敼
+# ViteForge 项目简报
 
-## 鎶€鏈灦鏋?ViteForge/
-鈹溾攢鈹€ SKILL.md
-鈹溾攢鈹€ README.md
-鈹溾攢鈹€ PROJECT_BRIEF.md
-鈹溾攢鈹€ scripts/
-鈹?  鈹溾攢鈹€ generate_vite_config.py   鈫?鏍稿績鐢熸垚鑴氭湰
-鈹?  鈹斺攢鈹€ project_detect.py         鈫?椤圭洰妫€娴?鈹溾攢鈹€ assets/
-鈹?  鈹斺攢鈹€ vite_templates.json       鈫?20+ 鍦烘櫙妯℃澘搴?鈹溾攢鈹€ references/
-鈹?  鈹溾攢鈹€ vite_plugins.md           鈫?鎻掍欢閫熸煡琛?鈹?  鈹斺攢鈹€ build_tools_map.md        鈫?Webpack鈫扸ite 鏄犲皠
-鈹斺攢鈹€ examples/                     鈫?react-ts / vue-ts / library
+## 项目概要
 
-## 涓?i18nFlow 鍏崇郴
-鍚屽睘"寮€鍙戣€呮晥鐜囧伐鍏?Skill 鐭╅樀"绗簩涓骇鍝侊紝鍏辩敤鍒嗗彂绛栫暐锛堟帢閲?椋炰功+GitHub锛夈€
+- **项目名**：ViteForge
+- **定位**：Vite 配置自动生成 Trae Skill，一句需求 → 完整 vite.config.ts
+- **一句话**：告诉它 "React + TS + 代理/api到后端 + 别名@"，10 秒生成可直接用的完整 Vite 配置
+- **工作区路径**：C:\AI_Projects\ViteForge
+- **目标用户**：用 Trae 做前端开发的开发者（React/Vue/Svelte/Library）
+
+## 核心功能
+
+1. 自动检测项目技术栈（框架/语言/包管理器）
+2. 按需生成完整 vite.config.ts（plugins/alias/proxy/env/build）
+3. 依赖自动安装提示（缺哪个插件装哪个）
+4. Webpack → Vite 迁移辅助
+5. 多环境配置（dev/preview/prod）
+6. 常见场景模板库（SPA/MPA/组件库/Electron）
+
+## 差异化
+
+- 不是 "给一个通用模板"，而是根据项目实际文件结构生成
+- 内置 30+ 插件配置模板，知道 peerDependencies
+- 代理、别名、环境变量全自动推断
+- 生成的配置有中文注释解释每行的作用
+
+## 定价
+
+- 免费版：React/Vue 基础模板 + 插件列表
+- Pro 版：29.9元，多框架 + 高级场景(库模式/SSR/Electron) + 增量修改
+
+## 技术架构
+
+```
+ViteForge/
+├── SKILL.md
+├── README.md
+├── PROJECT_BRIEF.md
+├── scripts/
+│   ├── generate_vite_config.py   → 核心生成脚本
+│   └── project_detect.py         → 项目检测
+├── assets/
+│   └── vite_templates.json       → 20+ 场景模板库
+├── references/
+│   ├── vite_plugins.md           → 插件速查表
+│   └── build_tools_map.md        → Webpack→Vite 映射
+└── examples/                     → react-ts / vue-ts / library
+```
+
+## 与 i18nFlow 关系
+
+同属 "开发者效率工具 Skill 矩阵" 第二个产品，共用分发策略（掘金+飞书+GitHub）。
